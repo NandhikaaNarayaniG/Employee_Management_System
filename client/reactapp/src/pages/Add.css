@@ -1,0 +1,102 @@
+.addPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d3557, #457b9d); /* Dark blue gradient */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .formContainer {
+    background: #f1faee; /* Light card background */
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    animation: slideIn 0.6s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d3557; /* Deep blue for labels */
+    margin-bottom: 5px;
+  }
+  
+  #inputAdd {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #333;
+    background: #e9ecef; /* Light gray for inputs */
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+  
+  #inputAdd:focus {
+    border-color: #457b9d; /* Accent blue */
+    background: #f1faee; /* Matches card background */
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #457b9d, #1d3557); /* Button matches background theme */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #1d3557, #457b9d); /* Reverse gradient on hover */
+  }
+  
+  span {
+    color: #e63946; /* Red for error messages */
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .formContainer {
+      padding: 20px;
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  

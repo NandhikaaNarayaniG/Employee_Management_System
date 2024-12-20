@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Main App Container */
+.App {
+  text-align: center;
+}
+
+/* Navigation Links */
+nav {
+  background-color: #333;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #575757;
+}
+
+/* Home Page */
+.home-page {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.post {
+  background-color: #fff;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post .name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.post .emploeeID,
+.post .email,
+.post .phone,
+.post .department,
+.post .dateOfJoining,
+.post .role {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Styling for Login Page */
+.login-page {
+  background-color: white;
+  padding: 30px;
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-page input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-page button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-page button:hover {
+  background-color: #575757;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .home-page,
+  .login-page {
+    width: 90%;
+  }
+}
